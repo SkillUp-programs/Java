@@ -1,24 +1,24 @@
-package Prgs1;
+package Prgs3;
 import java.util.*;
 public class Even_Odd_Count {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
-		System.out.println("enter size :");
-		int s = sc.nextInt(); // s = 8
-		int[] nums = new int[s];
-		int even = 0, odd = 0;
-		System.out.println("enter "+ s +" values :");
-		for(int i=0;i<s;i++) // 0-7 -> 8 values
+		System.out.println("enter size");
+		int s = sc.nextInt();  // s = 10
+		int even=0,odd=0;
+		int[] num = new int[s];
+		System.out.println("enter "+ s + " values");
+		for(int i=0; i<s; i++)
 		{
-			nums[i] = sc.nextInt(); // 1 2 3 6 7 8 9 5
+			num[i] = sc.nextInt();	 // 10 values		
 		}
-		for(int i=0;i<s;i++) // 0-7 -> 8 values
+		for(int i=0;i<s;i++)
 		{
-			if(nums[i] %2 == 0)
+			if(num[i]%2==0)
 				even++;
 			else
 				odd++;
 		}
 		System.out.println("even number count = "+even);
 		System.out.println("odd number count = "+odd);
-	} }
+		} }
